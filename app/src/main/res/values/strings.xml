@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MoviesApps</string>
+    <string name="API_KEY">7888a463f565559cca191816a88cda37</string>
+    <string name="title_activity_utama">activity_utama</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
