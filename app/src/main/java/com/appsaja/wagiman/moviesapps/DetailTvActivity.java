@@ -59,7 +59,7 @@ public class DetailTvActivity extends AppCompatActivity {
         call.enqueue(new Callback<TvDetail>() {
             @Override
             public void onResponse(Call<TvDetail> call, Response<TvDetail> response) {
-                String genre = "";
+//                String genre = "";
                 tvDetail = new TvDetail();
                 tvDetail.setPoster(response.body().getPoster());
                 tvDetail.setTitle(response.body().getTitle());
@@ -84,10 +84,10 @@ public class DetailTvActivity extends AppCompatActivity {
                 releaseDate.setText(tvDetail.getReleased_date());
 
                 if (tvDetail.getGenres().size() > 0){
-                    for (int x = 0; x < tvDetail.getGenres().size(); x++){
-                        genre = genre + tvDetail.getGenres().get(x).getName()+", ";
-                    }
-                    genreTv.setText(genre);
+//                    for (int x = 0; x < tvDetail.getGenres().size(); x++){
+//                        genre = genre + tvDetail.getGenres().get(x).getName()+", ";
+//                    }
+                    genreTv.setText(tvDetail.getGenres().get(0).getName());
                 }else {
                     genreTv.setText("-");
                 }

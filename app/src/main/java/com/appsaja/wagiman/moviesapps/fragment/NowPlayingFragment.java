@@ -52,7 +52,7 @@ public class NowPlayingFragment extends Fragment implements ItemClickListener {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         nowPlayingView = inflater.inflate(R.layout.main_layout, container, false);
-        rView = (RecyclerView) nowPlayingView.findViewById(R.id.recycler);
+        rView = nowPlayingView.findViewById(R.id.recycler);
         getMovieFromApi();
 
         return nowPlayingView;
@@ -78,9 +78,9 @@ public class NowPlayingFragment extends Fragment implements ItemClickListener {
                 movieList.addAll(response.body().getResults());
                 rAdapter.notifyDataSetChanged();
 //                List<Movie> movieList = response.body().getResults();
-                Log.d("RESULTS", "Page: " + response.body().getPage() + "\n"
-                +"Total Page: "+response.body().getTotalPages() +"\n" + "Total result: "+ response.body().getTotal_results()+"\n"+
-                "Movies : "+movieList.get(3).getTitle());
+//                Log.d("RESULTS", "Page: " + response.body().getPage() + "\n"
+//                +"Total Page: "+response.body().getTotalPages() +"\n" + "Total result: "+ response.body().getTotal_results()+"\n"+
+//                "Movies : "+movieList.get(3).getTitle());
             }
             @Override
             public void onFailure(Call<MovieResponse> call, Throwable t) {

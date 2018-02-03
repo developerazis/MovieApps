@@ -42,6 +42,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp">
                         <TextView
+                            android:text="Genre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
                             android:text="Release Date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -60,49 +65,50 @@
                             android:text="Production"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="20dp"/>
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp">
+                        <TextView
+                            android:text=":"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:text=":"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:text=":"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:text=":"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:text=":"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp">
                         <TextView
                             android:text="Genre"
+                            android:id="@+id/genre"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp">
-                        <TextView
-                            android:text=":"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="5dp"/>
-                        <TextView
-                            android:text=":"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="5dp"/>
-                        <TextView
-                            android:text=":"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="5dp"/>
-                        <TextView
-                            android:text=":"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="20dp"/>
-                        <TextView
-                            android:text=":"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="5dp"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp">
                         <TextView
                             android:text="Release Date"
                             android:id="@+id/releaseDate"
@@ -126,13 +132,7 @@
                             android:id="@+id/production"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="20dp"/>
-                        <TextView
-                            android:text="Genre"
-                            android:id="@+id/genre"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="5dp"/>
+                            android:layout_marginBottom="10dp"/>
                     </LinearLayout>
                 </LinearLayout>
 

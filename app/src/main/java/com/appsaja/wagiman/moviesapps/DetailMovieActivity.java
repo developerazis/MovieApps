@@ -73,7 +73,7 @@ public class DetailMovieActivity extends AppCompatActivity {
                 }else {
                     productionMovie.setText("-");
                 }
-                durationMovie.setText(details.getDuration()+ " Minute");
+                durationMovie.setText(details.getDuration()+ " minutes");
                 releaseDate.setText(details.getRelease_date());
                 voteMovie.setText(details.getVoteAverage().toString());
                 overviewMovie.setText(details.getOverview());
